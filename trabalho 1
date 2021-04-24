@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+   <title>Nba House</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div class="container-fluid">
+
+
+      <div class="row"> 
+        <div class="col-4">
+         <img src="data:image/png;base64,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" height="100px">
+        </div>
+        <div class="col" >
+          <br>
+          <h1 >NBA House </h1> 
+        </div>
+        
+      </div><!-- linha -->
+
+      <!-- menu -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(40, 72, 252); ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: white;">Produtos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                    
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Bonés</a></li>
+                    <li><a class="dropdown-item" href="#">Blusas</a></li> 
+                    <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="background-color:rgb(233, 59, 59); border-color:white ; color: white;">Procurar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <hr>
+      <!-- conteudo do site -->
+      <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img width="286" height="190"  src ="https://media1.giphy.com/media/eGxGiyIYCrXqfk2ZbL/giphy.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Regatas</h5>
+                  <p class="card-text">
+                    </p>
+                  <a href="#" class="btn btn-outline-success" style= "background-color: rgb(40, 72, 252); border-color: rgb(40, 72, 252);color: seashell;">Compre agora</a>
+                </div>
+            </div>
+          </div><!-- fim coluna -->
+         
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/originals/f1/be/a4/f1bea45ceabc1d7390f1b2b3589ee56a.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Regatas Clássicas</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-outline-success" style="background-color: rgb(40, 72, 252); border-color: rgb(40, 72, 252);color: seashell; ">Compre agora</a>
+                </div>
+            </div>
+          </div><!-- fim coluna -->
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.manelsanchez.pt/uploads/media/images/1B,P2817,P29.gif.pagespeed.ce.x18oVv4TCM.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tênis</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-outline-success" style="background-color: rgb(40, 72, 252); border-color: rgb(40, 72, 252);color: seashell;">Compre agora </a>
+                </div>
+            </div>
+          </div><!-- fim coluna -->
+          <div class="col">
+            <aside>
+            
+              <h1>Patrocinadores</h1>
+             
+             <img src="data:image/png;base64,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"
+            </aside>
+          </div>
+        <!-- fim coluna -->
+    </div>
+  
+
+    <div class="row">
+       <hr>
+       <small> Be like Mike </small>
+    </div>
+    
+
+  </body>
+</html>
